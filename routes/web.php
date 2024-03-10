@@ -16,18 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/page1', function () {
-    return view('page1');
+Route::get('/{name}', function ($name) {
+    return view('{name}');
 });
-Route::get('/trangchu', function () {
-    return view('trangchu');
-});
-Route::get('/gioithieu', function () {
-    return view('gioithieu');
-});
-Route::get('/lienhe', function () {
-    return view('lienhe');
-});
-Route::get('/ban', function () {
-    return view('ban');
-});
+// Route::get('/trangchu', function () {
+//     return view('trangchu');
+// });
+// Route::get('/gioithieu', function () {
+//     return view('gioithieu');
+// });
+// Route::get('/lienhe', function () {
+//     return view('lienhe');
+// });
+// Route::get('/ban', function () {
+//     return view('ban');
+// });
