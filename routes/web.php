@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/{name}', function ($name) {
-    return view('{name}');
+    return view($name);
 });
-// Route::get('/trangchu', function () {
-//     return view('trangchu');
-// });
+Route::get('/trangchu', function () {
+    return view('trangchu');
+ });
 // Route::get('/gioithieu', function () {
 //     return view('gioithieu');
 // });
